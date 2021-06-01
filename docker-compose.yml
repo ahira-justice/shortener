@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  shortenerapi:
+    container_name: shortenerapi
+    image: ${DOCKER_REGISTRY-}shortenerapi:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
